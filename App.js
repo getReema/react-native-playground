@@ -1,30 +1,45 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, SafeAreaView, Image, TouchableOpacity } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  SafeAreaView,
+  Image,
+  TouchableOpacity,
+  Button,
+  Alert
+} from "react-native";
 
 export default function App() {
+  const handelPress = () => {
+    console.log("Button Pressed");
+  };
+
   return (
-    <SafeAreaView style={styles.container}>
-  
-<TouchableOpacity onPress={()=> console.log('Image Pressed')}>
-        <Image source={{
-          uri: 'https://saib.com.sa/sites/default/files/logo.png',
-          width:412,
-          height:122
-        }} />
-</TouchableOpacity>
+    <View style={styles.container}>
+      <Button color="pink" title="Click Me" onePress={()=>{
+        Alert.alert('My Title', "My Message",[
+          {text: 'Yes', 
+          onPress:()=>{console.log('Yes Clicked')}
+        },{
+          text:'No',
+          onPress: () => {console.log('No Pressed')}
+        }
+        ])
+      }} />
+
       <StatusBar style="auto" />
-    </SafeAreaView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     marginTop: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
-
