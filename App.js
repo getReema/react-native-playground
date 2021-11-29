@@ -8,7 +8,11 @@ export default function App() {
   
 
         <Text> Hello React Native </Text>
-        <Image source={require('./assets/icon2.png')} />
+        <Image source={{
+          uri: 'https://saib.com.sa/sites/default/files/logo.png',
+          width:412,
+          height:122
+        }} />
 
       <StatusBar style="auto" />
     </SafeAreaView>
@@ -24,3 +28,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
