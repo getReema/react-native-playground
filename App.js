@@ -1,4 +1,5 @@
 import { StatusBar } from "expo-status-bar";
+import { MaterialIcons } from '@expo/vector-icons';
 import React from "react";
 import {
   StyleSheet,
@@ -46,6 +47,9 @@ export default function App() {
 Hello ! I love React  React React React React:) 
     </Text>
 
+    <MaterialIcons name="auto-awesome" size={50} color="gold" />
+    <MaterialIcons name="auto-awesome" size={50} color="gold" />
+    <MaterialIcons name="auto-awesome" size={50} color="gold" />
 
 
     </View>
