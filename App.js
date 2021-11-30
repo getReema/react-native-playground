@@ -23,67 +23,36 @@ export default function App() {
       style={{
         backgroundColor: "#eee",
         flex: 1,
-        flexDirection: "column", //column, row, column reverse, row reverse
+        flexDirection: "row", //column, row, column reverse, row reverse
         justifyContent:"space-around",
         alignItems: "center",
         alignContent: 'center',
         flexWrap: "wrap",
         
-      }}
-    >
+      }}>
       <View
         style={{
           backgroundColor: "dodgerblue",
+          //flexBasis: 100,
+          //flexGrow: 1,
           width: 100,
           height: 100,
-          alignSelf:"flex-start"
+          borderWidth: 10,
+          borderColor: 'royalblue',
+          borderRadius: 50,
+          shadowColor: 'grey',
+          shadowOffset: {height:10, width:10},
+          shadowOpacity: 1, // for ios 
+
+          //for android:
+          elevation:20,
+
         }}
       ></View>
 
-      <View
-        style={{
-          backgroundColor: "gold",
-          width: 100,
-          height: 100,
-        }}
-      ></View>
-
-      <View
-        style={{
-          backgroundColor: "tomato",
-          width: 100,
-          height: 100,
-        }}
-      ></View>
-        <View style={{
-        backgroundColor: 'grey',
-        width: 100,
-        height: 100,
-      }} >
-      </View>
-      <View style={{
-        backgroundColor: 'greenyellow',
-        width: 100,
-        height: 100,
-      }} >
-      </View>
-      <View style={{
-        backgroundColor: 'purple',
-        width: 100,
-        height: 100,
-      }} >
-      </View>
-      <View style={{
-        backgroundColor: 'orange',
-        width: 100,
-        height: 100,
-      }} >
-      </View>
-
+      
     </View>
-  );
+  )
 }
 
-// const styles = StyleSheet.create({
 
-// });
