@@ -13,25 +13,29 @@ import {
 
 } from "react-native";
 
+import { useDeviceOrientation, useDimensions } from '@react-native-community/hooks'
+
+
 export default function App() {
-  const handelPress = () => {
-    console.log("Button Pressed");
-  };
+  console.log(useDimensions());
+  console.log(useDeviceOrientation());
+
+
+const {landscape} = useDeviceOrientation();
+
+const handelPress = () => {
+  console.log('Button Pressed')
+}
 
   return (
     <SafeAreaView style={styles.container}>
-      <Button color="pink" title="Click Me" onePress={()=>{
-        Alert.alert('My Title', "My Message",[
-          {text: 'Yes', 
-          onPress:()=>{console.log('Yes Clicked')}
-        },{
-          text:'No',
-          onPress: () => {console.log('No Pressed')}
-        }
-        ])
-      }} />
-
       
+      <View style={{
+        backgroundColor: 'dodgerblue',
+        width: '100%',
+        height: landscape ? '100%':'30%',
+      }}>
+      </View>
     </SafeAreaView>
   );
 }
