@@ -8,7 +8,9 @@ import {
   Image,
   TouchableOpacity,
   Button,
-  Alert
+  Alert,
+  Platform
+
 } from "react-native";
 
 export default function App() {
@@ -17,7 +19,7 @@ export default function App() {
   };
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Button color="pink" title="Click Me" onePress={()=>{
         Alert.alert('My Title', "My Message",[
           {text: 'Yes', 
@@ -29,8 +31,8 @@ export default function App() {
         ])
       }} />
 
-      <StatusBar style="auto" />
-    </View>
+      
+    </SafeAreaView>
   );
 }
 
@@ -38,8 +40,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    marginTop: 10,
-    alignItems: "center",
-    justifyContent: "center",
+  //  paddingTop: 25
   },
 });
