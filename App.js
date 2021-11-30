@@ -30,34 +30,21 @@ export default function App() {
         flexWrap: "wrap",
       }}
     >
-      <View
-        style={{
-          backgroundColor: "dodgerblue",
-          //flexBasis: 100,
-          //flexGrow: 1,
-          width: 100,
-          height: 100,
-          padding: 20,
-          paddingHorizontal: 10,
-        }}
-      ></View>
-
-      <View
-        style={{
-          backgroundColor: "gold",
-          width: 50,
-          height: 50,
-        }}
-      ></View>
-
-<View
-        style={{
-          backgroundColor: "tomato",
-          width: 100,
-          height: 100,
-          margin:20
-        }}
-      ></View>
+     
+    <Text style = {{
+      fontFamily: 'Courier',
+      fontSize: 30,
+      fontStyle: 'italic',
+      fontWeight: '600',
+      color: 'purple',
+      textTransform: 'capitalize',
+      textDecorationLine: 'underline',
+      textAlign:'left',
+      padding: 10,
+      lineHeight:50
+    }}>
+Hello ! I love React  React React React React:) 
+    </Text>
 
 
 
