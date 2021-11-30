@@ -17,33 +17,34 @@ import { useDeviceOrientation, useDimensions } from '@react-native-community/hoo
 
 
 export default function App() {
-  console.log(useDimensions());
-  console.log(useDeviceOrientation());
-
-
-const {landscape} = useDeviceOrientation();
-
-const handelPress = () => {
-  console.log('Button Pressed')
-}
+ 
 
   return (
-    <SafeAreaView style={styles.container}>
-      
-      <View style={{
-        backgroundColor: 'dodgerblue',
-        width: '100%',
-        height: landscape ? '100%':'30%',
+    
+    <View style={{backgroundColor: '#eee', flex:1 }}>
+
+      <View style ={{
+        background: 'dodgerblue',
+        flex:2
       }}>
       </View>
-    </SafeAreaView>
+
+      <View style ={{
+        background: 'gold',
+        flex:1
+      }}>
+      </View>
+
+      <View style ={{
+        background: 'tomato',
+        flex:1
+      }}>
+      </View>
+
+    </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-  //  paddingTop: 25
-  },
-});
+// const styles = StyleSheet.create({
+
+// });
