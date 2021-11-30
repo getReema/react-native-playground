@@ -26,7 +26,8 @@ export default function App() {
         flexDirection: "column", //column, row, column reverse, row reverse
         justifyContent:"space-around",
         alignItems: "center",
-        flexWrap: "nowrap",
+        alignContent: 'center',
+        flexWrap: "wrap",
         
       }}
     >
@@ -54,6 +55,31 @@ export default function App() {
           height: 100,
         }}
       ></View>
+        <View style={{
+        backgroundColor: 'grey',
+        width: 100,
+        height: 100,
+      }} >
+      </View>
+      <View style={{
+        backgroundColor: 'greenyellow',
+        width: 100,
+        height: 100,
+      }} >
+      </View>
+      <View style={{
+        backgroundColor: 'purple',
+        width: 100,
+        height: 100,
+      }} >
+      </View>
+      <View style={{
+        backgroundColor: 'orange',
+        width: 100,
+        height: 100,
+      }} >
+      </View>
+
     </View>
   );
 }
