@@ -24,12 +24,12 @@ export default function App() {
         backgroundColor: "#eee",
         flex: 1,
         flexDirection: "row", //column, row, column reverse, row reverse
-        justifyContent:"space-around",
+        justifyContent: "space-around",
         alignItems: "center",
-        alignContent: 'center',
+        alignContent: "center",
         flexWrap: "wrap",
-        
-      }}>
+      }}
+    >
       <View
         style={{
           backgroundColor: "dodgerblue",
@@ -37,22 +37,30 @@ export default function App() {
           //flexGrow: 1,
           width: 100,
           height: 100,
-          borderWidth: 10,
-          borderColor: 'royalblue',
-          borderRadius: 50,
-          shadowColor: 'grey',
-          shadowOffset: {height:10, width:10},
-          shadowOpacity: 1, // for ios 
-
-          //for android:
-          elevation:20,
-
+          padding: 20,
+          paddingHorizontal: 10,
         }}
       ></View>
 
-      
+      <View
+        style={{
+          backgroundColor: "gold",
+          width: 50,
+          height: 50,
+        }}
+      ></View>
+
+<View
+        style={{
+          backgroundColor: "tomato",
+          width: 100,
+          height: 100,
+          margin:20
+        }}
+      ></View>
+
+
+
     </View>
-  )
+  );
 }
-
-
