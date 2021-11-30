@@ -17,6 +17,7 @@ import {
   useDeviceOrientation,
   useDimensions,
 } from "@react-native-community/hooks";
+import AppText from "./Components/AppText";
 
 export default function App() {
   return (
@@ -47,10 +48,12 @@ export default function App() {
 Hello ! I love React  React React React React:) 
     </Text>
 
+
     <MaterialIcons name="auto-awesome" size={50} color="gold" />
     <MaterialIcons name="auto-awesome" size={50} color="gold" />
     <MaterialIcons name="auto-awesome" size={50} color="gold" />
 
+<AppText> This is a text from Component </AppText>
 
     </View>
   );
